@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image rotate</title>
+    <style>
+        .container{
+            width: 400px;
+            border: 2px solid red;
+            margin: auto;
+            perspective: 1000px;
+        }
+        .container .image{
+            transform: rotateY(0);
+            transition: all 0.5s ease-in 0s;
+        }
+        .container:hover .image{
+            transform: rotateY(-90deg);
+        }
+        .image img{
+            width: 100%;
+            height: auto;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 25px 15px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: rotateY(90deg);
+        }
+        .container:hover .content{
+            transform: rotateY(0deg);
+            transition: all 0.8s ease-in 0s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr-tZDvsQwoZqC90mkWz0N8_Xi6hu2MLTB8w&usqp=CAU" alt="">
+            </div>
+            <div class="content">
+                <h3>Web Designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloremque ullam libero blanditiis voluptatibus sapiente veritatis deleniti consequuntur perspiciatis. Doloremque?</p>
+        </div>
+    </div>
+</body>
+</html>

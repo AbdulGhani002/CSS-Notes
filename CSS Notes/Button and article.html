@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is description.">
+    <meta name="keywords" content="Store">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style media="screen">
+      *{
+        box-sixing:border-box;
+      }
+      h1{
+        text-align:center;
+      }
+      .container{
+        width:900px;
+        border:3px solid black;
+        margin:30px auto;
+        font-family: 'Acme', sans-serif;
+        background-color:sandybrown;
+      }
+      .item{
+        border:3px solid grey;
+        margin:12px 3px;
+        background:aqua;
+      }
+      #ruits{
+        float:left;
+        width:48%;
+      }
+      #ff{
+        float:right;
+        width:48%;
+      }
+      #ffff{
+        float:both;
+        width:99%;
+        clear:right;
+      }
+      a.btn{
+        text-decoration: none;
+      }
+      a.btn:hover{
+        color: #fff;
+        background-color: #30336b;
+      }
+      .btn{
+        background-color: #b8e994;
+        padding: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: ubuntu;
+        display; inline-block;
+        position: relative;
+        transition: all 2.1s ease 0s
+      }
+      .btn::after{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        z-index:-1;
+        transition: all 2.1s ease 0s;
+      }
+      .btn:hover{
+        color:#fff;
+      }
+      .btn:hover:after{
+        width:100%;
+      }
+    </style>
+    <title>Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my store</h1>
+    <div class="item" id="ruits">
+      <h3>Fruits</h3>
+      <p class="para" id="Fruitspara">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+  sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      </div>
+      <div class="item" id="ff">
+        <h3>Computer</h3>
+        <p class="para" id="fff">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        </div>
+        <div class="item" id="ffff">
+          <h3>Stationary</h3>
+
+          <p class="para" id="aaa">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+    </div>
+    </div>
+    <div class="cont 1">
+      <a href="https://www.wikipedia.org" target="_blank" class="btn">Save</a>
+    </div>
+  </body>
+</html>

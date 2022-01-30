@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #566c2b;
+            display: flex;
+            align-items: center;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header a {
+            color: #fff;
+        }
+
+        .logo {
+            margin: 0px auto;
+            font-size: 30px;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        .menu li {
+            padding: 10px;
+        }
+        aside{
+            flex:0 0 20vw;
+            background:beige;
+            padding: 10px;
+        }
+        article{
+            padding: 10px;
+        }
+        aside ul{
+            list-style: none;
+            padding: 0%;
+        }
+        aside ul a{
+            color:#566c2b ;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            border-bottom: 1px solid grey;
+        }
+        aside img{
+            width: 100%;
+        }
+        .social-links li {
+            padding: 10px;
+        }
+        .services-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          
+        }
+        .service-box{
+            border: 1px solid #eee;
+            flex-basis: 32%;
+            display: flex;
+            flex-direction:column;
+            max-width: 400px;
+        }
+        .service-box img{
+            width: 100%;
+        }
+        #main{
+            display: flex;
+            padding: 10px;
+        }
+        footer{
+            background-color: #566c2b;
+            color: white;
+            text-align: center;
+            font-size:25px;
+            padding: 15px 0;
+        }
+        .service-img{
+           width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 3;
+  
+        }
+        .read-more{
+            align-self: flex-start;
+            margin-top: auto;
+            display: block;
+        }
+        .read-more a{
+        background: grey;
+        color: #fff;
+        padding: 8px 13px;
+        text-decoration: none;
+        border: 2px solid grey;
+        }
+        .read-more a:hover{
+            background: transparent;
+            border: 2px solid grey;
+            color: grey;
+        }
+        .service-box h3{
+            margin: 5px 10px;
+        }
+        /* Responsiveness */
+        @media screen and (max-width:850px) {
+            .service-box{
+                flex-basis: 48%;
+                max-width: 370px;
+                flex-wrap: wrap;
+            }
+            aside{
+                flex: 0 0 30vh;
+            }
+        }
+        @media screen and ( max-width:600px ) {
+            header{
+                flex-direction: column;
+            }
+            .logo{
+                order: -1;
+            }
+            #main{
+                flex-direction: column;
+            }
+            article{
+                order: -1;
+            }
+            .services-container{
+                flex-direction: column;
+                align-items: center;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="">
+
+                        Home</li>
+                </a>
+                <li>
+                    <a href="">
+
+                        About Us</li>
+                </a>
+                <li>
+                    <a href="">
+
+                        Contact Us</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="">Abdul Ghani</a>
+        </div>
+        <nav class="social-links">
+            <ul>
+                <li><a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                <li><a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                <li><a href="">
+                        <i class="fab fa-github"></i>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <aside>
+            <ul>
+                <li><a href="">Extra Links</a></li>
+                <li><a href="">Extra Links</a></li>
+                <li><a href="">Extra Links</a></li>
+                <li><a href="">Extra Links</a></li>
+                <li><a href="">Extra Links</a></li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1598986646512-9330bcc4c0dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </aside>
+        <article>
+            <h2>Welcome to our webpage</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ex expedita iure minima possimus
+                odio facere vel deserunt doloribus error at, recusandae, aperiam perferendis ipsa debitis sunt cumque
+                aut vero earum inventore! Nulla provident quidem autem aliquam! Impedit, incidunt reprehenderit totam
+                soluta possimus nisi quibusdam porro, libero fuga eos, numquam suscipit eius illo tenetur dolor natus
+                similique quas! Perspiciatis tempora nulla, itaque harum in impedit architecto blanditiis distinctio
+                provident nobis. Voluptates, facere praesentium eaque vel aliquid officia quas quam ullam cupiditate
+                odit saepe eligendi natus facilis fuga tempora quae minima modi neque, corrupti aut voluptate optio
+                sapiente. Ipsum, aut atque!</p>
+                <h2>Our Services</h2>
+                <div class="services-container">
+                    <div class="service-box">
+                        <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        <div class="service-title">
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facilis nulla itaque fuga quaerat, voluptatem maxime sunt. Labore, autem magni.
+
+                        </div>
+                        <div class="read-more">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://media.istockphoto.com/photos/code-programming-for-website-editors-view-picture-id1290492381?b=1&k=20&m=1290492381&s=170667a&w=0&h=NQSXJKhncCP1GLzDkD8KPZsCOh1wldDj5RZbPVJztxQ=" alt="">
+                        <div class="service-title">
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facilis nulla itaque fuga quaerat, voluptatem maxime sunt. Labore, autem magni.
+
+                        </div>
+                        <div class="read-more">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                        <div class="service-title">
+                            <h3>Web Designing</h3>
+                        </div>
+                        <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facilis nulla itaque fuga quaerat, voluptatem maxime sunt. Labore, autem magni.
+
+                        </div>
+                        <div class="read-more">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        </article>
+        
+    </div>
+        <footer>
+            Made By Abdul Ghani
+        </footer>        
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/ba55d607ab.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

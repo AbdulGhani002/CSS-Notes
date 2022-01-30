@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Rotation Card</title>
+    <style>
+        .container {
+            width: 300px;
+            border: 2px solid red;
+            margin: 0px auto;
+            position: relative;
+        }
+        .box img {
+            border-radius: 50%;
+            width: 300px;
+            transition: all 0.5s;
+            transform-origin: 95% 50% 0%;
+            z-index: 1;
+        }
+
+        .box:hover img {
+            transform: translate(300px);
+        }
+
+        .box img::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 95%;
+            width: 5px;
+            height: 5px;
+            background-color: black;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            box-sizing: border-box;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://media.istockphoto.com/vectors/developer-icon-set-included-the-icons-as-code-programmer-coding-app-vector-id946828264?k=20&m=946828264&s=612x612&w=0&h=6uNz-jJZLD30R2fYe-hBBYCBlmobtIYfeYZwK8IsXs4="
+                alt="">
+        </div>
+        <div class="content">
+            <h2>Web Designer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sint? Ducimus nihil incidunt
+                temporibus perferendis magnam enim reiciendis beatae illo?</p>
+        </div>
+    </div>
+</body>
+
+</html>

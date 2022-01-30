@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        div{
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: calc(50% -1em);
+            border-radius: 1.3em;
+            transform-origin: 1.3em 2em;
+            animation: rotate;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            margin: auto;
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .a1{
+            animation-delay: 0.1s;
+            background-color: rgb(119, 119, 119);
+        }
+        .a2{
+            animation-delay: 0.3s;
+            background-color: rgb(119, 119, 119);
+        }
+        .a3{
+            animation-delay: 0.5s;
+            background-color: rgb(119, 119, 119);
+        }
+        .a4{
+            animation-delay: 0.7s;
+            background-color: rgb(119, 119, 119);
+        }
+        .a5{
+            animation-delay: 0.9s;
+            background-color: rgb(119, 119, 119);
+        }
+        .a6{
+            animation-delay: 1.1s;
+            background-color: rgb(119, 119, 119);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="ag">
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+            <div class="a4"></div>
+            <div class="a5"></div>
+            <div class="a6"></div>
+        </div>
+    </center>
+
+</body>
+</html>

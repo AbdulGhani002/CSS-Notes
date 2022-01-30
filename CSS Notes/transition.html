@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .ag{
+            width: 200px;
+            height: 200px;
+            background:pink;
+            margin: 25px;
+            transition-property: width ;
+            transition-duration: 2s;
+        }
+        .aa{
+            width: 200px;
+            height: 200px;
+            background: purple;
+            margin: 25px;
+            /* transition-property: width,height;
+            transition-duration: 2s,2s; */
+            transition: width,height,background 2s 2s all;
+        }
+        .ab{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 25px;
+        }
+        .ag:hover{
+            width: 100px;
+            height: 100px;
+            background:blue;
+            margin: 25px;
+        }
+        .aa:hover{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            margin: 25px;
+        }
+        .ab:hover{
+            width: 100px;
+            height: 100px;
+            background: olive;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ag"></div>
+    <div class="aa"></div>
+    <div class="ab"></div>
+</body>
+</html>

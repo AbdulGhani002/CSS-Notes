@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            background: wheat;
+            width: 1000px;
+            margin: 70px 0px 0px 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+            grid-gap: 20px 20px;
+            /* grid-row-start: auto;
+            grid-row-end: auto; */
+            grid-row: auto auto;
+            grid-column: auto auto;
+            /* grid-column-start: auto;
+            grid-column-end: auto; */
+            /* grid-row: auto auto;
+            grid-column: auto auto; */
+            grid-area: auto/auto/auto/auto;
+            overflow: scroll;
+        }
+
+        .box1 {
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+            grid-row: 1 / 4;
+            grid-column: 1 / 4;
+            order: 1;
+        }
+
+        .box2 {
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .box3 {
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .box4 {
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .box5 {
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .box6 {
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+        }
+        .box7{
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .box7 > div{
+            background: #fff;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab iure magni quo voluptate,
+            mollitia facere ex, et repellat reprehenderit consequuntur. Voluptatum ipsam assumenda sit quis odio earum
+            beatae, recusandae et excepturi dolorum quibusdam, magnam labore esse maiores itaque suscipit nihil autem
+            nesciunt tempore sequi. Quae voluptatem magnam illum excepturi.</div>
+        <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab iure magni quo voluptate,
+            mollitia facere ex, et repellat reprehenderit consequuntur. Voluptatum ipsam assumenda sit quis odio earum
+            beatae, recusandae et excepturi dolorum quibusdam, magnam labore esse maiores itaque suscipit nihil autem
+            nesciunt tempore sequi. Quae voluptatem magnam illum excepturi.</div>
+        <div class="box3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab iure magni quo voluptate,
+            mollitia facere ex, et repellat reprehenderit consequuntur. Voluptatum ipsam assumenda sit quis odio earum
+            beatae, recusandae et excepturi dolorum quibusdam, magnam labore esse maiores itaque suscipit nihil autem
+            nesciunt tempore sequi. Quae voluptatem magnam illum excepturi.</div>
+        <div class="box4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab iure magni quo voluptate,
+            mollitia facere ex, et repellat reprehenderit consequuntur. Voluptatum ipsam assumenda sit quis odio earum
+            beatae, recusandae et excepturi dolorum quibusdam, magnam labore esse maiores itaque suscipit nihil autem
+            nesciunt tempore sequi. Quae voluptatem magnam illum excepturi.</div>
+        <div class="box5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab iure magni quo voluptate,
+            mollitia facere ex, et repellat reprehenderit consequuntur. Voluptatum ipsam assumenda sit quis odio earum
+            beatae, recusandae et excepturi dolorum quibusdam, magnam labore esse maiores itaque suscipit nihil autem
+            nesciunt tempore sequi. Quae voluptatem magnam illum excepturi.</div>
+        <div class="box6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab iure magni quo voluptate,
+            mollitia facere ex, et repellat reprehenderit consequuntur. Voluptatum ipsam assumenda sit quis odio earum
+            beatae, recusandae et excepturi dolorum quibusdam, magnam labore esse maiores itaque suscipit nihil autem
+            nesciunt tempore sequi. Quae voluptatem magnam illum excepturi.</div>
+            <div class="box7">
+                <div class="subitems1">One</div>
+                <div class="subitems2">Two</div>
+                <div class="subitems3">Three</div>
+            </div>
+    </div>
+</body>
+
+</html>

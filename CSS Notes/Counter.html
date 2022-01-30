@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+            counter-reset: mucounter 0;
+            caret-color: aqua;
+        }
+        h2::before{
+            content: "Chapter" Counter(mucounter) ":";
+            counter-increment: mucounter 1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>List items Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor?</li>
+        <li>List items Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor?</li>
+        <li>List items Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor?</li>
+        <li>List items Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor?</li>
+        <li>List items Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor?</li>
+    </ul>
+
+
+    <div class="ag">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora cumque illo, ratione eius sapiente praesentium, ex quasi sint cupiditate beatae a expedita molestiae repudiandae quod soluta obcaecati dicta corrupti!</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora cumque illo, ratione eius sapiente praesentium, ex quasi sint cupiditate beatae a expedita molestiae repudiandae quod soluta obcaecati dicta corrupti!</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora cumque illo, ratione eius sapiente praesentium, ex quasi sint cupiditate beatae a expedita molestiae repudiandae quod soluta obcaecati dicta corrupti!</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora cumque illo, ratione eius sapiente praesentium, ex quasi sint cupiditate beatae a expedita molestiae repudiandae quod soluta obcaecati dicta corrupti!</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora cumque illo, ratione eius sapiente praesentium, ex quasi sint cupiditate beatae a expedita molestiae repudiandae quod soluta obcaecati dicta corrupti!</p>
+    </div>
+</body>
+</html>

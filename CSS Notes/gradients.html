@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .me{
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            background: linear-gradient(red,blue);
+        }
+        .ag{
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            background: linear-gradient(to right,yellow,indigo);
+        }
+        .bg{
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            background: repeating-linear-gradient(to top,yellow 10%,indigo 30%,blue 30%,green 30%);
+        }
+        .mg{
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            background: radial-gradient(red, yellow 10%, green 15%);
+        }
+    </style>
+</head>
+<body>
+    <div class="me"></div>
+    <div class="ag"></div>
+    <div class="bg"></div>
+    <div class="mg"></div>
+</body>
+</html>

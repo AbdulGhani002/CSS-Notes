@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        :root{
+            --main-color : blue;
+        }
+        p{
+            color: var(--main-color);
+        }
+        p::first-letter{
+            color: red;
+            font-size: 30px;
+            background-color: wheat;
+            font-weight: bolder;
+        }
+        p::first-line{
+            color: red;
+        }
+        p::selection{
+            background: red;
+            color: #fff;
+        }
+        ::placeholder{
+            color: red;
+        }
+        body{
+            padding: 10px 10px;
+            font-size: 19px;
+        }
+        div a{
+            color: red;
+        }
+        div a:hover{
+            color: green;
+        }
+        a:visited{
+            color: hotpink;
+        }
+        div a:active{
+            color: indigo;
+        }
+        p:target{
+            background-color: gold;
+        }
+        div a:focus:checked{
+            border: 2px solid red;
+            color: gold;
+            background-color: black;
+        }
+        h1{
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        li:first-child{
+            color: red;
+            background-color: black;
+        }
+        li:last-child{
+            background-color: cyan;
+            color: white;
+        }
+        li:nth-child(2){
+            color:blue ;
+            background-color: chocolate;
+        }
+        span:nth-last-child(1){
+            background-color: chocolate;
+            
+        }
+        div:empty{
+            background-color:cornflowerblue;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p:not(.ag){
+            background-color: crimson;
+            color: white;
+        }
+        input:valid{
+            background-color: pink;
+        }
+        p:read-only{
+            border-color: blue;
+            color: black;
+        }
+        p::after{
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <div class="xx">
+        <main>
+            <nav class="navbar">
+                <a href="" class="link1">Home</a><a href="#ag" class="link2">Contact Us</a><a href="#ag" class="link3">About</a><a href="#ag" class="link4">Hire Experts</a>
+            </nav>
+        </main>
+    </div>
+    <ul id="first">
+        <li>
+        <p class="ag" id="ag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, perspiciatis. Illum blanditiis ipsa dolorem. Vitae a rerum nihil similique fugiat!
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eum necessitatibus omnis obcaecati saepe. Autem est obcaecati, molestiae sunt corrupti nemo iure laboriosam? Quasi, quae cumque eius commodi vel perspiciatis provident natus distinctio ex ipsum laudantium explicabo illum saepe molestias.
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut tenetur corporis, doloribus voluptates nemo quas provident accusamus praesentium enim veritatis, quidem asperiores ipsum omnis ipsam nostrum esse quo non laudantium earum deserunt accusantium. Corrupti quo nisi, tempora neque laboriosam temporibus sed aliquid iusto voluptatem culpa, amet iste necessitatibus? Cum, saepe?</p>
+            </span>
+            <div></div>
+        </p>
+        </li>
+        <li>
+        <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi iusto facilis maxime blanditiis, unde, esse ad quaerat adipisci facere ipsam sed modi, sapiente est nulla voluptatem veniam dolorum! Quia?</p>
+        </li>
+        <li>
+        <p class="am">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis assumenda, maiores maxime possimus eveniet eligendi distinctio doloremque autem tenetur necessitatibus perspiciatis dolores ex expedita deserunt aliquid nulla enim. Voluptate doloremque provident voluptates repellat molestias? Nemo ipsum distinctio unde repellendus.</p>
+    </li>
+    </ul>
+        <ul id="second">
+            <li>
+            <p class="aa">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus accusantium laudantium quisquam. Nihil repellat harum itaque, voluptatum quidem cum deleniti.</p>
+        </li>
+        <li>
+            <p class="nobody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi debitis expedita necessitatibus voluptates obcaecati hic optio, incidunt eos, nam voluptatibus assumenda. Quis velit voluptates odit modi illo magni cum laborum!</p>
+        </li>
+        </ul>
+</body>
+</html>

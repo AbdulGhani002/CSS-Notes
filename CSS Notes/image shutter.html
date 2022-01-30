@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Shutter</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            width: 350px;
+            background: #fff;
+            box-shadow: 0 0 5px grey;
+            overflow: hidden;
+            position: relative;
+            margin: 10px auto;
+        }
+        .box img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .box-content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .box-content:before, .box-content:after{
+            content: "";
+            width: 95%;
+            height: 47%;
+            background: #E01E48;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: all 0.5s;
+            opacity: 0;
+        }
+        .box-content:before{
+            top: -20%;
+        }
+        .box-content:after{
+            bottom: -20%;
+        }
+        .box:hover .box-content:before{
+            top: 3%;
+            opacity: 0.8;
+        }
+        .box:hover .box-content:after{
+            bottom: 3%;
+            opacity: 0.8;
+        }
+        .content{
+            width: 100%;
+            height: 45px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+            text-align: center;
+            transform: rotate(90deg);
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        .social{
+            padding: 0;
+            margin: 0 0 20px 0;
+            list-style: none;
+        }
+        .social li{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social li a{
+            color: #000;
+            background: #fff;
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            font-size: 20px;
+            transition: all 0.2s;
+        }
+        .title{
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+        .post{
+            color: #fff;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+        .box:hover .content{
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+        .box:hover .social li a:hover{
+            color: #E01E48;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_5p82EwHIgHYhP-YY8u7P7P2egVdsgx3tw&usqp=CAU" alt="">
+        <div class="box-content">
+            <div class="content">
+            <ul class="social">
+                <li><a href="">
+
+                    <i class="fab fa-google"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="">
+
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+
+                <li><a href="">
+
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                </li>
+            </ul>
+            <h3 class="title">Johnson</h3>
+            <span class="post">Web Developer</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

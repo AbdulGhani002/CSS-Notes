@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Min Max</title>
+    <style>
+        .container {
+            background: wheat;
+            width: 700px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, 150px);
+            -ms-grid-template-columns: 1fr 1fr 1fr 1fr;
+            -ms-grid-template-rows: repeat(2, 150px);
+            grid-gap: 5px;
+            align-items: stretch;
+            grid-auto-flow: row;
+            grid-auto-rows: 80px;
+            grid-auto-columns: auto;
+            /* place-items: align-items justify-items; */
+            justify-content: safe;
+        }
+
+        .item1 {
+            background: orangered;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+        }
+
+        .item2 {
+            background: greenyellow;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding:10px 10px;
+        }
+
+        .item3 {
+            background: blueviolet;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding:10px 10px;
+        }
+
+        .item4 {
+            background: hotpink;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding:10px 10px;
+        }
+
+        .item5 {
+            background: aqua;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding:10px 10px;
+        }
+
+        .item6 {
+            background: blue;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding:10px 10px;
+        }
+
+        .item7 {
+            background: orange;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding:10px 10px;
+        }
+
+        .item8 {
+            background: brown;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            padding:10px 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">One</div>
+        <div class="item2">Two</div>
+        <div class="item3">Three</div>
+        <div class="item4">Four</div>
+        <div class="item5">Five</div>
+        <div class="item6">Six</div>
+        <div class="item7">Seven</div>
+        <div class="item8">Eight</div>
+    </div>
+</body>
+
+</html>

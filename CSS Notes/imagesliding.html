@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sliging Effect</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            width: 350px;
+            margin: 10px auto;
+            box-shadow: 0 0 5px #bababa;
+            overflow: hidden;
+            position: relative;
+        }
+        .box img{
+            width: 100%;
+            transform: scale(1);
+            display: block;
+            height: auto;
+            transition: all 0.5s;
+        }
+        .box:hover img{
+            transform: scale(1.15);
+        }
+        .box-content{
+            width: 100%;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            color: black;
+        }
+        .name,.post{
+            display: block;
+            font-size: 25px;
+            line-height: 25px;
+            margin: 0;
+            opacity: 1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.5s;
+        }
+        .post{
+            opacity: 0;
+        }
+        .box:hover .post{
+            opacity: 1;
+        }
+        .box:hover .name{
+            opacity: 0;
+        }
+        .box:after, .box:before{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+            transition: all 0.5s;
+        }
+        .box:before{
+            bottom: 5%;
+            left: 5%;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+        }
+        .box:after{
+            top: 4.4%;
+            right: 4.4%;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+        }
+        .box:hover:after, .box:hover:before{
+            opacity: 1;
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg" alt="">
+        <div class="box-content">
+            <h3 class="name">John</h3>
+            <span class="post">Web Designer</span>
+        </div>
+    </div>
+</body>
+</html>

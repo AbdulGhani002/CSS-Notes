@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid yellow;
+            padding: 20px 20px;
+            margin: 30px 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: baseline;
+            align-content: center;
+            width: 1000px;
+        }
+        .container > div{
+            border: 2px solid red;
+            background: violet;
+            color: white;
+            width: 10%;
+            display: inline-block;
+            padding: 10px 10px;
+            margin: 10px 10px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .box1{
+            align-self: auto;
+            order: -1;
+            flex-grow: 2;
+            margin: auto;
+        }
+        .box2{
+            flex-basis: 20%;
+        }
+        .ag > div{
+            background-color: aqua;
+            color: blue;
+            flex-grow: 1;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ag">
+            <div class="bg1">One</div>
+            <div class="bg2">Two</div>
+            <div class="bg3">Three</div>
+            <div class="bg4">Four</div>
+        </div>
+        <div class="box1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero veniam earum vel id illo nesciunt cum
+            pariatur non, officia eos.
+        </div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus, maxime
+            aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus,
+            maxime aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus,
+            maxime aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+        <div class="box12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati saepe possimus,
+            maxime aliquid deleniti esse sint aliquam similique accusamus!
+        
+        </div>
+    </div>
+</body>
+
+</html>

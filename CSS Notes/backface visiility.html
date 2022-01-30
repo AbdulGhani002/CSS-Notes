@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface</title>
+    <style>
+        .card{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -150px;
+            perspective: 500px;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .card:hover .content{
+            transform: rotateY(180deg);
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+        .front{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #fff;
+            color: tomato;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            color: tomato;
+            font-size: 50px;
+            text-align: center;
+            line-height: 300px;
+        }
+        .back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: tomato;
+            color: #fff;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            font-size: 50px;
+            text-align: center;
+            line-height: 300px;
+        }
+            </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+</body>
+</html>

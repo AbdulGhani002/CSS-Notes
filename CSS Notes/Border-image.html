@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Image</title>
+    <style>
+        /* * is a universal selector */
+        /* .ag* is used for all classes named ag */
+        *{
+            background-color: aquamarine;
+        }
+        .ag{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border: 30px solid red;
+            margin: -150px;
+            text-align: justify;
+            padding: 20px;
+            border-image-slice: 27 27 27 27;
+            border-image-width: 20px 20px 20px 20px;
+            border-image-outset: 0px 0px 0px 0px;
+            border-image-repeat: stretch stretch;
+            border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png");
+            border-style: solid; 
+            /* borderimagegenerator */
+        }
+    </style>
+</head>
+<body>
+    <div class="ag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid aut sequi dignissimos minima. Aliquid nostrum maxime itaque iure eveniet, dolore necessitatibus, voluptatibus, beatae ea ad officiis aliquam non sunt.</div>
+</body>
+</html>

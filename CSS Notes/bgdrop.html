@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Drop</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+            border: 2px solid red;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgx9EHJYRsRJ-P0b0c9dob7mDLrpQkeMpcg&usqp=CAU);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ag{
+            border-radius: 5px;
+            border: 2px solid #fff;
+            width: 400px;
+            height: 200px;
+            background-color: rosybrown;
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ag"></div>
+    </div>
+</body>
+</html>

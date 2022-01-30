@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        body{
+            background: slategrey;
+        }
+        #wrapper{
+            background-color: white;
+            width: 80%;
+            margin: auto;
+            border: 3px solid red;
+
+        }
+        #header{
+            border: 2px solid red;
+        }
+        #article{
+            border: 2px solid red;
+            width: 70%;
+            display: inline-block;
+            float: left;
+        }
+        #aside{
+            border: 2px solid red;
+            width: 27%;
+            float: right;
+            display: inline-block;
+        }
+        #footer{
+            border: 2px solid red;
+            clear: both;
+        }
+        #menu{
+            border:3px solid red;
+            display: inline-block;
+        }
+        #menu ul{
+            display: inline-block;
+        }
+        #menu ul li{
+            display: inline-block;
+            list-style-type: none;
+            padding: 0px 70px;
+        }
+        #menu ul li a{
+            text-decoration: none;
+            cursor: pointer;
+            list-style: none;
+            color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"><h1>Hello World</h1>
+            <div id="menu">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="http://">Contact Us</a></li>
+                    <li> <a href="#">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    <div id="article">
+        <h2>Basic content</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste ducimus modi sit asperiores quia rem odio rerum veniam dolorum numquam quam laudantium impedit soluta dolorem sint, nemo harum cumque, facere debitis, alias voluptates suscipit. Repudiandae expedita nam quibusdam nulla modi atque possimus animi. Tempore, dignissimos deserunt! Illo excepturi voluptatibus sit autem iusto quos rem, tempore maxime modi, quidem, numquam nemo dolorem dolor possimus culpa maiores provident similique! Tempore doloribus sequi cum minima iusto voluptatum, commodi quisquam laboriosam, minus officia assumenda voluptatibus voluptate eos doloremque omnis ab distinctio. Architecto distinctio in inventore dolor accusamus porro laudantium mollitia dolorum ab officia.</p>
+    </div>
+    <div id="aside"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ab veniam assumenda porro iste libero quae laboriosam enim itaque asperiores labore doloremque error hic perferendis, ipsa sequi! Pariatur maxime alias dolor repudiandae, possimus saepe explicabo culpa ipsam </p></div>
+    <div id="footer"> &copy;Copyright</div>
+    </div>
+    
+</body>
+</html>
